@@ -37,7 +37,7 @@ const Navbar = () => {
         variants={slideBottom(0.2)}
         initial="initial"
         animate="animate"
-        className="py-8  pl-50 container flex justify-between items-center"
+        className="bg-primary/8 backdrop-blur-lg shadow-md fixed max-w-full z-50 py-8  px-40 container flex justify-between items-center"
       >
         {/* Logo section */}
         <div className="flex items-center gap-1">

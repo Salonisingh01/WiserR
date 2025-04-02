@@ -10,7 +10,7 @@ import Banner2 from '../Banner/Banner2'
 const Hero = () => {
   return (
     <>
-      <div className="container pl-70">
+      <div className="container ml-30 p-10 rounded-2xl bg-primary/10 ">
         <div className="grid grid-cols-1 md:grid-cols-2 min-h-[700px] md:min-h-[600px]">
           {/* Text content section */}
           <div className="space-y-5 flex flex-col justify-center items-center text-center md:text-left py-20 px-10 md:pr-24 md:py-0 md:px-0 md:items-start">
