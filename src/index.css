@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 @theme{
-        --color-primary:#18745d;
+        --color-primary:#39A57A;
         --container-centre : true;
         --container-padding: 1rem;
         --container-padding-sm: 2rem;

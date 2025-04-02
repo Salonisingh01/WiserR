@@ -12,22 +12,22 @@ const NavbarLinks = [
   {
     id: 2,
     title: "Courses",
-    link: "#",
+    link: "/courses",
   },
   {
     id: 3,
     title: "Colleges",
-    link: "#",
+    link: "/colleges",
   },
   {
     id: 4,
     title: "Tutors",
-    link: "#",
+    link: "/tutors",
   },
   {
     id: 5,
     title: "Study Materials",
-    link: "#",
+    link: "/materials",
   },
 ];
 const Navbar = () => {
@@ -37,12 +37,12 @@ const Navbar = () => {
         variants={slideBottom(0.2)}
         initial="initial"
         animate="animate"
-        className="py-8  pl-40 container flex justify-between items-center"
+        className="py-8  pl-50 container flex justify-between items-center"
       >
         {/* Logo section */}
         <div className="flex items-center gap-1">
-          <img src={Logo} alt="" className="w-[70px]" />
-          <p className="font-bold text-2xl">HUSTLE</p>
+          <img src={Logo} alt="" className="w-[125px]" />
+
         </div>
         {/* Link section */}
         <div className="hidden md:block">
@@ -51,7 +51,7 @@ const Navbar = () => {
               return (
                 <li key={link.id}>
                   <a
-                    className="hover:text-primary uppercase text-sm xl:text-base"
+                    className="  p-2 rounded-2xl uppercase text-sm xl:text-base  hover:bg-primary hover:text-white transform duration-500  "
                     href={link.link}
                   >
                     {link.title}
@@ -63,7 +63,7 @@ const Navbar = () => {
         </div>
         {/* Button section */}
         <div>
-          <button className="primary-btn border border-black rounded-lg  hover:bg-primary">Get Started</button>
+          <button className="primary-btn p-2 rounded-lg  hover:bg-primary hover:text-white border">Get Started</button>
         </div>
       </motion.div>
     </>

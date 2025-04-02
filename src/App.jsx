@@ -1,22 +1,30 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
-import Services from './Components/Services/Services'
-import Banner from './Components/Banner/Banner'
-import Banner2 from './Components/Banner/Banner2'
-import Cards from './Components/Cards/cards'
 import Email from './Components/Email/Email'
+import Tutors from './Components/Tutors/Tutors'
+import Courses from './Components/Courses/Courses'
+import Colleges from './Components/Colleges/Colleges'
+import { Routes, Route, BrowserRouter } from "react-router"
+import StudyMaterials from './Components/StudyMaterials/StudyMaterials'
 
 
 const App = () => {
   return (
     <>
      <Navbar/>
-     <Hero/>
-     <Services/>
-     <Banner/>
-     <Cards/>
-     <Banner2/>
+     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Hero/>}/>
+        <Route path="/courses" element={<Courses/>}/>
+        <Route path="/tutors" element={<Tutors/>}/>
+        <Route path="/college" element={<Colleges/>}/>
+        <Route path="/materials" element={<StudyMaterials/>}/>
+
+
+      </Routes>
+     </BrowserRouter>
+     
      <Email/>
 
     </>

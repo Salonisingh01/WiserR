@@ -2,6 +2,10 @@ import React from "react";
 import HeroImg from "../../assets/1.png";
 import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
+import Services from '../Services/Services'
+import Banner from '../Banner/Banner'
+import Cards from '../Cards/cards'
+import Banner2 from '../Banner/Banner2'
 
 const Hero = () => {
   return (
@@ -52,6 +56,10 @@ const Hero = () => {
           </div>
         </div>
       </div>
+      <Services/>
+      <Banner/>
+      <Cards/>
+      <Banner2/>
     </>
   );
 };
