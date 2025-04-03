@@ -4,11 +4,12 @@ import { motion } from "framer-motion";
 import { slideUp } from "../../utility/animation";
 import Services from '../Services/Services'
 import Banner from '../Banner/Banner'
-import Cards from '../Cards/cards'
-import Banner2 from '../Banner/Banner2'
 import NumberCounter from "../NumberCounter/NumberCounter";
 import banner1 from '../../assets/banner1.png'
 import banner2 from '../../assets/banner2.png'
+import Testimonals from "../Testimonals/Testimonals";
+
+
 
 const BannerData ={
   image:banner1,
@@ -86,8 +87,9 @@ const Hero = () => {
         <Services />
         <Banner { ...BannerData}/>
         <Banner{ ...BannerData2} reverse={true}/>
-        <Cards />
-        <Banner2 />
+        {/* <Cards /> */}
+        {/* <Banner2 /> */}
+        <Testimonals/>
       </div>
     </>
   );

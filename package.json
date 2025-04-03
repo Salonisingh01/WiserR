@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "both": "concurrently \"npm run dev\" \"node Backend/server.js\""
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.0",
     "axios": "^1.8.4",
+    "concurrently": "^9.1.2",
     "motion": "^12.6.3",
     "react": "^19.0.0",
     "react-countup": "^6.5.3",
@@ -19,6 +21,8 @@
     "react-icons": "^5.5.0",
     "react-router": "^7.4.1",
     "react-router-dom": "^7.4.1",
+    "react-slick": "^0.30.3",
+    "slick-carousel": "^1.8.1",
     "tailwindcss": "^4.1.0"
   },
   "devDependencies": {
