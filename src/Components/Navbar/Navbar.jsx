@@ -30,7 +30,9 @@ const NavbarLinks = [
     id: 5,
     title: "Study Materials",
     link: "/materials",
+
   },
+  
 ];
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
