@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const Services = () => {
   return (
     <>
-      <div className="container py-12 pl-70">
+      <div className="container py-12 pl-20">
         {/* header section */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -13,13 +13,10 @@ const Services = () => {
           className="py-12 flex justify-between items-center"
         >
           <h1 className="text-4xl xl:text-5xl font-bold max-w-[550px]">
-            Classes to Spark Your{" "}
-            <span className="text-gray-400 underline">Creativity</span>
+          {" "}
+            <span className="text-black "> Benefits of online tutoring services with us </span>
           </h1>
-          <p className="hidden md:block">
-            Notified to Spark your <br></br>
-            <span className="text-gray-400 underline">Balance</span>{" "}
-          </p>
+          
         </motion.div>
         {/* cards section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -41,12 +38,11 @@ const Services = () => {
             className="max-w-[300px] mx-auto space-y-4"
           >
             <img src={ServiceImg} alt="" className="w-14" />
-            <p className="uppercase font-semibold text-xl">Learn By doing</p>
+            <p className="uppercase font-semibold text-xl"> Top colleges For You</p>
             <p className="text-gray-500 pl-6 border-l-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptates vel eaque ea dolorem voluptate, nesciunt mollitia
-              asperiores magnam? Assumenda perferendis optio dicta natus nobis,
-              cupiditate eveniet libero ratione quam iusto!
+              You will get all the options for choosing best college for you.
+              Serach all the colleges near your, match your requirements compare it with other colleges 
+              & choose the best one for You.              
             </p>
           </motion.div>
           <motion.div
@@ -56,12 +52,11 @@ const Services = () => {
             className="max-w-[300px] mx-auto space-y-4"
           >
             <img src={ServiceImg} alt="" className="w-14" />
-            <p className="uppercase font-semibold text-xl">Learn By doing</p>
+            <p className="uppercase font-semibold text-xl">Get Best Tutors</p>
             <p className="text-gray-500 pl-6 border-l-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptates vel eaque ea dolorem voluptate, nesciunt mollitia
-              asperiores magnam? Assumenda perferendis optio dicta natus nobis,
-              cupiditate eveniet libero ratione quam iusto!
+              Don't Know how to solve your query? still stuck at that one question?
+              worry not get help from our top tutors by one-on-one online classes.
+              Ask any question and get the solution.
             </p>
           </motion.div>
           <motion.div
@@ -71,12 +66,10 @@ const Services = () => {
             className="max-w-[300px] mx-auto space-y-4"
           >
             <img src={ServiceImg} alt="" className="w-14" />
-            <p className="uppercase font-semibold text-xl">Learn By doing</p>
+            <p className="uppercase font-semibold text-xl">Get all study Materials</p>
             <p className="text-gray-500 pl-6 border-l-2">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Voluptates vel eaque ea dolorem voluptate, nesciunt mollitia
-              asperiores magnam? Assumenda perferendis optio dicta natus nobis,
-              cupiditate eveniet libero ratione quam iusto!
+              Get All notes and study materials at one place whether it's about 
+              any programming language, management or History.Get all notes made by our top tutors.
             </p>
           </motion.div>
         </div>

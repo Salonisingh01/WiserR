@@ -1,71 +1,88 @@
-import React from "react";
-import BannerImg from "../../assets/3.png";
-import { motion } from "framer-motion";
-import { slideUp } from "../../utility/animation";
+import React from 'react';
+import { motion } from 'framer-motion';
 
-const Banner = () => {
+// Animation variants
+const slideUp = (delay) => {
+  return {
+    hidden: {
+      y: 50,
+      opacity: 0,
+    },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay: delay,
+      },
+    },
+  };
+};
+
+const Banner = ({ image, tag, title, subtitle, link, reverse }) => {
   return (
-    <>
-      <div className="container py-20 ml-30">
-        <div className="grid grid-cols-1 md:grid-cols-2 min-h-[700px] md:min-h-[600px]">
-          {/* Text content section */}
-          <div className="space-y-8 flex flex-col justify-center items-center text-center md:text-left py-20 px-10 md:pr-10 md:py-0 md:px-0 md:items-start">
-            <motion.h1
-              variants={slideUp(0.2)}
-              initial="initial"
-              whileInView="animate"
-              className="text-4xl xl:text-5xl font-semibold text-black/80"
-            >
-              Design is not what it looks like and feels like. Design is how{" "}
-              <br />
-              <span className="text-gray-400 underline">It Works</span>
-            </motion.h1>
-            <motion.button
-              variants={slideUp(0.4)}
-              initial="initial"
-              whileInView="animate"
-              className="primary-btn hover:bg-black  text-black hover:text-white duration-300"
-            >
-              More News
-            </motion.button>
-            <div className="flex gap-3">
-              <motion.div
-                variants={slideUp(0.6)}
-                initial="initial"
-                whileInView="animate"
-                className="space-y-2"
-              >
-                <p className="font-semibold text-lg">Design Tools</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-              </motion.div>
-              <motion.div
-                variants={slideUp(0.8)}
-                initial="initial"
-                whileInView="animate"
-                className="space-y-2"
-              >
-                <p className="font-semibold text-lg">Design Tools</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit</p>
-              </motion.div>
-            </div>
+    <div className="bg-gray-50 pb-20 pl-20 ">
+      <div className="container">
+        <div className="grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0">
+         
+          {/* Banner image section */}
+          <div className={`flex justify-evenly items-center ${reverse && 'md:order-last md:justify-center'}`}>
+            <motion.img 
+             initial={{opacity:0, scale:0.5}}
+             whileInView={{opacity:1,scale:1}}
+             transition={{type:'spring',stiffness:100, delay:0.2}}
+            //  viewport={{once:true}}
+             
+            src={image} alt="" className="w-[400px] h-[350px] object-cover" />
           </div>
-          {/* Banner Image section */}
-          <div className="flex justify-center items-center">
-            <motion.img
-              initial={{
-                opacity: 0,
-                x: 100,
-              }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-              src={BannerImg}
-              alt=""
-              className="w-[90%] md:w-[550px] xl:w-[600px] md:!scale-125"
-            />
+          
+          {/* Banner text section */}
+          <div className="flex flex-col justify-center text-center md:text-left space-y-4 lg:max-w-[500px]">
+            <motion.p
+              variants={slideUp(0.5)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="text-sm text-orange-600 font-semibold capitalize"
+            >
+              {tag}
+            </motion.p>
+            
+            <motion.h2
+              variants={slideUp(0.7)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="text-2xl font-bold"
+            >
+              {title}
+            </motion.h2>
+            
+            <motion.p
+              variants={slideUp(0.9)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="text-sm text-slate-500"
+            >
+              {subtitle}
+            </motion.p>
+            
+            <motion.div
+              variants={slideUp(1.1)}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              className="flex justify-center md:justify-start"
+            >
+              <button className="primary-btn p-3 md:p-4 rounded-lg bg-primary text-white duration-300 
+             ml-8 md:ml-16 lg:ml-30 mt-10 md:mt-16 lg:mt-20 
+             text-sm md:text-base lg:text-lg">Get started</button>
+            </motion.div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
