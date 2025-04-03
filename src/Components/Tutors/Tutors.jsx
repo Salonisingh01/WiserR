@@ -1,4 +1,4 @@
- import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { useState } from "react";
 import Tutor1 from "../../Images/Tutor1.jpeg";
 import Tutor2 from "../../Images/Tutor2.jpeg";

@@ -43,7 +43,8 @@ const Navbar = () => {
       >
         {/* Logo section */}
         <div className="flex items-center gap-1">
-          <img src={Logo} alt="" className="w-[125px]" />
+          <motion.img src={Logo} alt="" className="w-[125px]" 
+           whileHover={{scale:1.2}}/>
 
         </div>
         {/* Link section */}
