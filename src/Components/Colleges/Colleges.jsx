@@ -31,7 +31,7 @@ const CollegeSearch = () => {
         placeholder="Search colleges..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
-        className="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+        className="w-full p-3 border border-gray-300 rounded shadow-sm focus:outline-none focus:ring-2 focus:ring-primary"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3 }}
@@ -40,13 +40,13 @@ const CollegeSearch = () => {
         {filteredColleges.map((college, index) => (
           <motion.li 
             key={college.id}
-            className="p-4 bg-white shadow-md rounded-lg border-l-4 border-blue-500"
+            className="p-4 bg-white shadow-md rounded-lg border-l-4 border-primary"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: index * 0.1 }}
           >
             <a href={college.link} target="_blank" rel="noopener noreferrer" 
-               className="text-xl font-semibold text-blue-600 hover:underline">
+               className="text-xl font-semibold text-primary hover:underline">
               {college.name}
             </a>
             <p className="text-gray-700">Ranking: {college.ranking} | AICTE Ranking: {college.aicte_ranking}</p>
