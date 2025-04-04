@@ -11,6 +11,7 @@
     "both": "concurrently \"npm run dev\" \"node Backend/server.js\""
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.25.6",
     "@tailwindcss/vite": "^4.1.0",
     "axios": "^1.8.4",
     "concurrently": "^9.1.2",
