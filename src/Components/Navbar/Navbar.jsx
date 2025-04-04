@@ -38,7 +38,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
   return (
     <>
-      <nav className="fixed top-0 w-full">
+      <nav className="fixed top-0 w-full z-100">
         <motion.div
             variants={slideBottom(0.2)}
             initial="initial"

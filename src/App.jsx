@@ -1,7 +1,7 @@
 import React from 'react'
 import Navbar from './Components/Navbar/Navbar'
 import Hero from './Components/Hero/Hero'
-import Email from './Components/Email/Email'
+import Footer from './Components/Footer/Footer'
 import Tutors from './Components/Tutors/Tutors'
 import Courses from './Components/Courses/Courses'
 import Colleges from './Components/Colleges/Colleges'
@@ -24,11 +24,9 @@ const App = () => {
         <Route path="/colleges" element={<Colleges/>}/>
         <Route path="/materials" element={<StudyMaterials/>}/>
 
-
       </Routes>
      </BrowserRouter>
-     
-     <Email/>
+     <Footer/>
 
     </>
   )

@@ -1,7 +1,7 @@
 import React from "react";
-import Img1 from "../../assets/icon/1.png";
-import Img2 from "../../assets/icon/2.png";
-import Img3 from "../../assets/icon/3.png";
+// import Img1 from "../../assets/icon/1.png";
+// import Img2 from "../../assets/icon/2.png";
+// import Img3 from "../../assets/icon/3.png";
 import { slideUp } from "../../utility/animation";
 import { motion } from "framer-motion";
 
