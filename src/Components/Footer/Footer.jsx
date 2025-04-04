@@ -14,7 +14,7 @@ const bgStyle = {
 
 const Footer = () => {
   return (
-    <div style={bgStyle} className="pl-20">
+    <div style={bgStyle} className="pl-10">
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}

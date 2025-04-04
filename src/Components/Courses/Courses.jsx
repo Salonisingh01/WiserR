@@ -1,41 +1,52 @@
 import { motion } from "framer-motion";
-
+import img1 from '../../assets/icon/Science.jpg'
+import img2 from '../../assets/icon/bca.jpg'
+import img3 from '../../assets/icon/ai.jpg'
+import img4 from '../../assets/icon/mba.jpg'
+import img5 from '../../assets/icon/bba.jpg'
+import img6 from '../../assets/icon/emba.jpg'
+import img7 from '../../assets/icon/mbbs.jpg'
+import img8 from '../../assets/icon/dbs.jpg'
+import img9 from '../../assets/icon/ds.jpg'
+import img10 from '../../assets/icon/marketing.jpg'
+import img11 from '../../assets/icon/fullstack.png'
+import img12 from '../../assets/icon/aptitude.png'
 const courses = [
   {
     category: "Technology",
     courses: [
-      { name: "B.Tech in Computer Science", college: "Amity University, Gurugram", link: "https://www.amity.edu/gurugram/", image: "path_to_tech_image1.jpg" },
-      { name: "BCA (Bachelor of Computer Applications)", college: "GD Goenka University", link: "https://www.gdgoenkauniversity.com/", image: "path_to_tech_image2.jpg" },
-      { name: "M.Tech in Artificial Intelligence", college: "IILM University, Gurugram", link: "https://iilm.edu.in/", image: "path_to_tech_image3.jpg" },
+      { name: "B.Tech in Computer Science", college: "Amity University, Gurugram", link: "https://www.amity.edu/gurugram/", image: img1 },
+      { name: "BCA (Bachelor of Computer Applications)", college: "GD Goenka University", link: "https://www.gdgoenkauniversity.com/", image: img2},
+      { name: "M.Tech in Artificial Intelligence", college: "IILM University, Gurugram", link: "https://iilm.edu.in/", image:img3},
     ],
   },
   {
     category: "Management",
     courses: [
-      { name: "MBA in Marketing", college: "IBS Business School, Gurugram", link: "https://www.ibshyderabad.org/", image: "path_to_mgmt_image1.jpg" },
-      { name: "BBA (Bachelor of Business Administration)", college: "NorthCap University", link: "https://www.ncuindia.edu/", image: "path_to_mgmt_image2.jpg" },
-      { name: "Executive MBA", college: "K.R. Mangalam University", link: "https://www.krmangalam.edu.in/", image: "path_to_mgmt_image3.jpg" },
+      { name: "MBA in Marketing", college: "IBS Business School, Gurugram", link: "https://www.ibshyderabad.org/", image: img4 },
+      { name: "BBA (Bachelor of Business Administration)", college: "NorthCap University", link: "https://www.ncuindia.edu/", image:img5 },
+      { name: "Executive MBA", college: "K.R. Mangalam University", link: "https://www.krmangalam.edu.in/", image: img6 },
     ],
   },
   {
     category: "Medical",
     courses: [
-      { name: "MBBS", college: "SGT Medical College, Gurugram", link: "https://sgtuniversity.ac.in/", image: "path_to_medical_image1.jpg" },
-      { name: "BDS (Dental Surgery)", college: "PGIMS, Rohtak", link: "http://www.uhsr.ac.in/", image: "path_to_medical_image2.jpg" },
+      { name: "MBBS", college: "SGT Medical College, Gurugram", link: "https://sgtuniversity.ac.in/", image: img7 },
+      { name: "BDS (Dental Surgery)", college: "PGIMS, Rohtak", link: "http://www.uhsr.ac.in/", image: img8 },
     ],
   },
   {
     category: "Diploma & Short-Term Courses",
     courses: [
-      { name: "Diploma in Data Science", college: "Amity University", link: "https://www.amity.edu/gurugram/", image: "path_to_diploma_image1.jpg" },
-      { name: "Certificate in Digital Marketing", college: "IILM University", link: "https://iilm.edu.in/", image: "path_to_diploma_image2.jpg" },
+      { name: "Diploma in Data Science", college: "Amity University", link: "https://www.amity.edu/gurugram/", image: img9 },
+      { name: "Certificate in Digital Marketing", college: "IILM University", link: "https://iilm.edu.in/", image: img10},
     ],
   },
   {
     category: "Placement & Interview Preparation",
     courses: [
-      { name: "Full Stack Development Bootcamp", college: "Coding Ninjas, Gurugram", link: "https://www.codingninjas.com/", image: "path_to_placement_image1.jpg" },
-      { name: "Aptitude & Interview Prep", college: "Unacademy", link: "https://unacademy.com/", image: "path_to_placement_image2.jpg" },
+      { name: "Full Stack Development Bootcamp", college: "Coding Ninjas, Gurugram", link: "https://www.codingninjas.com/", image: img11 },
+      { name: "Aptitude & Interview Prep", college: "Unacademy", link: "https://unacademy.com/", image:img12 },
     ],
   },
 ];

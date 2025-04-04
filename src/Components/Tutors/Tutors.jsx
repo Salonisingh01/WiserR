@@ -2,14 +2,24 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import Tutor1 from "../../Images/Tutor1.jpeg";
 import Tutor2 from "../../Images/Tutor2.jpeg";
-import Tutor3 from "../../Images/Tutor3.jpeg";
+import Tutor3 from "../../Images/Tutor2.jpg";
 import Tutor4 from "../../Images/Tutor4.jpeg";
+import Tutor5 from '../../Images/Tutor5.jpeg';
+import Tutor6 from '../../Images/Tutor6.jpg';
+import Tutor7 from '../../Images/Tutor7.jpg';
+import Tutor8 from '../../Images/Tutor8.webp';
+
+
 
 const tutors = [
   { name: "Sarah Johnson", subject: "Mathematics", image: Tutor1 },
   { name: "Michael Lee", subject: "Physics", image: Tutor2 },
   { name: "Emma Watson", subject: "Computer Science", image: Tutor3 },
   { name: "James Brown", subject: "Business Studies", image: Tutor4 },
+  { name: "Ellie Clark", subject: "Artificial Intelligence", image: Tutor6 },
+  { name: "Lilly Snyder", subject: "Core Java", image: Tutor7 },
+  { name: "James Brown", subject: "Aptitude", image: Tutor5 },
+  { name: "James Brown", subject: "Full Stack Developer", image: Tutor8 },
 ];
 
 function Card({ children, className }) {

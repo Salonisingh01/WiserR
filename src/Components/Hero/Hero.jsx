@@ -5,6 +5,7 @@ import { slideUp } from "../../utility/animation";
 import Services from '../Services/Services'
 import Banner from '../Banner/Banner'
 import NumberCounter from "../NumberCounter/NumberCounter";
+import NavbarBanner from '../Navbar/NavbarBanner'
 import banner1 from '../../assets/banner1.png'
 import banner2 from '../../assets/banner2.png'
 import Testimonals from "../Testimonals/Testimonals";
@@ -30,6 +31,7 @@ const BannerData2 ={
 const Hero = () => {
   return (
     <>
+      <NavbarBanner/>
       <div>
 
         <div className="container p-25 pl-25  rounded-2xl bg-primary/10  ">
@@ -87,8 +89,7 @@ const Hero = () => {
         <Services />
         <Banner { ...BannerData}/>
         <Banner{ ...BannerData2} reverse={true}/>
-        {/* <Cards /> */}
-        {/* <Banner2 /> */}
+       
         <Testimonals/>
       </div>
     </>

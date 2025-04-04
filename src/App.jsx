@@ -7,26 +7,30 @@ import Courses from './Components/Courses/Courses'
 import Colleges from './Components/Colleges/Colleges'
 import { Routes, Route, BrowserRouter } from "react-router"
 import StudyMaterials from './Components/StudyMaterials/StudyMaterials'
-import NavbarBanner from './Components/Navbar/NavbarBanner'
+import SignUp from './Components/Signup/Signup'
+import Login from './Components/Login/Login'
 
- 
 
 const App = () => {
   return (
     <>
-     <Navbar/>
-     <NavbarBanner/>
-     <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Hero/>}/>
-        <Route path="/courses" element={<Courses/>}/>
-        <Route path="/tutors" element={<Tutors/>}/>
-        <Route path="/colleges" element={<Colleges/>}/>
-        <Route path="/materials" element={<StudyMaterials/>}/>
+      <BrowserRouter>
+        <Navbar />
+        
+        <Routes>
+          <Route path="/" element={<Hero />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/tutors" element={<Tutors />} />
+          <Route path="/colleges" element={<Colleges />} />
+          <Route path="/materials" element={<StudyMaterials />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
 
-      </Routes>
-     </BrowserRouter>
-     <Footer/>
+
+        </Routes>
+       
+      </BrowserRouter>
+      <Footer />
 
     </>
   )
