@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import a from '../../Images/StudyImg/coding.png'
 import b from '../../Images/StudyImg/Management1.png'
 import c from '../../Images/StudyImg/Softskills.png'
-import d from '../../Images/StudyImg/coresub.png'
+import d from '../../Images/StudyImg/Coresub.png'
 
 
 
