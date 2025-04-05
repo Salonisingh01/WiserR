@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import img1 from '../../assets/icon/Science.jpg'
+import img1 from '../../assets/icon/science.jpg'
 import img2 from '../../assets/icon/bca.jpg'
 import img3 from '../../assets/icon/ai.jpg'
 import img4 from '../../assets/icon/mba.jpg'
