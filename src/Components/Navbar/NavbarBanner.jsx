@@ -7,7 +7,7 @@ const NavbarBanner = () => {
     return (
         
             isOpen && (
-            <motion.div className='bg-primary text-sm text-center font-semibold p-1 hidden lg:block relative mt-25'>
+            <motion.div className='bg-primary text-sm text-center font-semibold p-1 hidden lg:block relative mt-28'>
                 Are you a university or school student looking for an online tutoring partnership?
                 <a href='#' className='text-shadow-indigo-600 ml-2'>
                     Talk to Us.

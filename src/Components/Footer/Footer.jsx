@@ -18,7 +18,7 @@ const Footer = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.5 }}
             whileInView={{ opacity: 1, scale: 1 }}
-            className="container text-center space-y-10 py-10"
+            className="container text-center space-y-10 py-3"
           >
             <div className="space-y-4">
               <p className="text-3xl md:text-4xl font-bold">WISER</p>

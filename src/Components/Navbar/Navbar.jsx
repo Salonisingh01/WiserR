@@ -77,7 +77,7 @@ const Navbar = () => {
           <SignedOut>
             <div className="hidden lg:block">
               <Link to='/login'>
-                <button className="secondary-btn p-2 rounded-lg ml-130 text-[#1B4D3E] hover:bg-primary hover:text-white border">SignIn</button>
+                <button className="secondary-btn p-2 rounded-lg  text-[#1B4D3E] hover:bg-primary hover:text-white border">SignIn</button>
               </Link>
             </div>
           </SignedOut>
@@ -85,7 +85,7 @@ const Navbar = () => {
           <SignedOut>
             <div className="hidden lg:block">
               <Link to='/signup'>
-                <button className="primary-btn p-2 rounded-lg mr-15 text-[#1B4D3E] hover:bg-primary hover:text-white border">SignUp</button>
+                <button className="primary-btn p-2 rounded-lg mr-5 text-[#1B4D3E] hover:bg-primary hover:text-white border">SignUp</button>
               </Link>
             </div>
           </SignedOut>

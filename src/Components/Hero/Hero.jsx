@@ -9,6 +9,8 @@ import NavbarBanner from '../Navbar/NavbarBanner'
 import banner1 from '../../assets/banner1.png'
 import banner2 from '../../assets/banner2.png'
 import Testimonals from "../Testimonals/Testimonals";
+import { Link } from "react-router-dom";
+
 
 
 
@@ -54,20 +56,20 @@ const Hero = () => {
               >
                 Searching For Your Answers? Finding Your Direction? We Are Here To Guide You.{" "}
               </motion.p>
-              <div>
+              <Link to='/signup'>
                 <motion.button
                   variants={slideUp(0.8)}
                   initial="initial"
                   animate="animate"
                   className="primary-btn p-3 md:p-4 rounded-lg bg-primary text-white duration-300 
-             ml-8 md:ml-16 lg:ml-30 mt-10 md:mt-16 lg:mt-20 
-             text-sm md:text-base lg:text-lg"
+                  ml-8 md:ml-16 lg:ml-30 mt-10 md:mt-16 lg:mt-20 
+                  text-sm md:text-base lg:text-lg hover:bg-white hover:text-primary cursor-pointer"
                 >
                   Get Started
                 </motion.button>
 
 
-              </div>
+              </Link>
             </div>
             {/* Hero Image section */}
             <div className="flex justify-center items-center">
