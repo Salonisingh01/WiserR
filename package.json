@@ -7,10 +7,12 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview ",
+    "preview": "vite preview",
     "both": "concurrently \"npm run dev\" \"node Backend/server.js\""
   },
   "dependencies": {
+    "@clerk/clerk-react": "^5.25.6",
+    "@clerk/react-router": "^1.2.0",
     "@tailwindcss/vite": "^4.1.0",
     "axios": "^1.8.4",
     "concurrently": "^9.1.2",

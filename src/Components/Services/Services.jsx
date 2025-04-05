@@ -1,5 +1,5 @@
 import React from "react";
-import ServiceImg from "../../assets/2.png";
+import ServiceImg from "../../assets/22.png";
 import { motion } from "framer-motion";
 
 const Services = () => {
