@@ -7,7 +7,7 @@ const CollegeSearch = () => {
   const [search, setSearch] = useState("");
 
   useEffect(() => {
-    axios.get("http://localhost:5000/api/colleges")
+    axios.get("/api/colleges")
       .then((response) => setColleges(response.data))
       .catch((error) => console.error("Error fetching colleges:", error));
   }, []);

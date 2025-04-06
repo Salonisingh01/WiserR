@@ -44,12 +44,19 @@ const colleges = [
   
    
 ];
+// Enhanced CORS configuration to allow your Vercel frontend
+app.use(cors({
+  origin: ['https://wiser-r.vercel.app', 'http://localhost:3000'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}));
 
 app.get("/api/colleges", (req, res) => {
   res.json(colleges);
 });
 
 const PORT = 5000;
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
